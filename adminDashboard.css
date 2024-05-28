@@ -1,0 +1,270 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  padding: 20px; /* Add padding for space around content */
+  height: 100%;
+}
+
+.dashboard-container {
+  transition: margin-left 0.3s ease;
+  margin-left: 280px; /* Same as before */
+  margin-top: 80px; /* Height of the header */
+  padding: 10px; /* Reduce padding */
+  height: calc(100% - 80px); /* Adjusted height to exclude header */
+}
+
+.applicants-container {
+  transition: margin-left 0.3s ease;
+  margin-left: 280px; /* Same as before */
+  padding: 10px; /* Reduce padding */
+  height: calc(100% - 80px); /* Adjusted height to exclude header */
+}
+
+.members-container {
+  transition: margin-left 0.3s ease;
+  margin-left: 280px; /* Same as before */
+  padding: 10px; /* Reduce padding */
+  height: calc(100% - 80px); /* Adjusted height to exclude header */
+}
+
+
+
+/* Common icon style */
+.icon {
+  fill: currentColor;
+  color: black; /* Ensure icons are black */
+}
+
+/* Full height for both sidebars */
+#sidebar, #collapsedSidebar {
+  position: fixed;
+  top: 80px; /* Adjust for header height */
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Specific widths and background colors */
+#sidebar {
+  width: 280px;
+  background-color: var(--bs-body-secondary); /* Ensure background color covers entire sidebar */
+}
+
+#collapsedSidebar {
+  width: 4.5rem;
+  background-color: var(--bs-body-secondary); /* Ensure background color covers entire sidebar */
+  height: 100%; /* Ensure it covers full height */
+}
+
+#collapsedSidebar .d-flex {
+  height: 100%; /* Ensure inner div covers full height */
+}
+
+
+
+
+
+
+
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px; /* Adjust height as needed */
+  z-index: 1100;
+  
+}
+
+.card {
+  width: 220px;
+}
+
+.card-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  opacity: 0.5;
+  width: 40px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+  
+/* Adjust chart sizes for responsiveness */
+.chart {
+  width: 100%; /* Use full width of container */
+  height: auto; /* Auto height to maintain aspect ratio */
+  background-color: whitesmoke;
+}
+
+.chart2 {
+  width: 100%; /* Use full width of container */
+  height: auto; /* Auto height to maintain aspect ratio */
+  background-color: whitesmoke;
+}
+
+.chart3 {
+  width: 100%; /* Use full width of container */
+  height: auto; /* Auto height to maintain aspect ratio */
+  background-color: whitesmoke;
+}
+
+.chart4 {
+  width: 100%; /* Use full width of container */
+  height: auto; /* Auto height to maintain aspect ratio */
+  background-color: whitesmoke;
+}
+
+/* Background styling */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('images/bg_admin_3.svg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Adjust opacity as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsiveness */
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .dashboard-container {
+    margin-left: 0; /* Reset margin for small screens */
+  }
+  
+  .applicants-container{
+    margin-left: 0; /* Reset margin for small screens */
+  }
+  
+  .members-container{
+    margin-left: 0; /* Reset margin for small screens */
+  }
+
+  table.table {
+    width: 100%; /* Adjust table width */
+    font-size: 8px; /* Adjust font size for small screens */
+  }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .dashboard-container {
+    margin-left: 280px; /* Reset margin for medium screens */
+  }
+  
+  .applicants-container{
+    margin-left: 280px; /* Reset margin for small screens */
+  }
+
+  .members-container{
+    margin-left: 280px; /* Reset margin for small screens */
+  }
+
+  table.table {
+    width: 80%; /* Adjust table width */
+    font-size: 10px; /* Adjust font size for medium screens */
+  }
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  .dashboard-container {
+    margin-left: 280px; /* Reset margin for large screens */
+  }
+
+  .applicants-container{
+    margin-left: 280px; /* Reset margin for small screens */
+  }
+
+  .members-container{
+    margin-left: 280px; /* Reset margin for small screens */
+  }
+
+  table.table {
+    width: 60%; /* Adjust table width */
+    font-size: 12px; /* Adjust font size for large screens */
+  }
+
+  #collapseButton {
+    position: fixed;
+    top:10%;
+    left: 245px; /* Adjust as needed */
+    transform: translateY(50%);
+    z-index: 1100; /* Ensure it's on top of other elements */
+  }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  .dashboard-container {
+    margin-left: 280px; /* Reset margin for extra-large screens */
+  }
+
+  .applicants-container{
+    margin-left: 280px; /* Reset margin for small screens */
+  }
+
+  .members-container{
+    margin-left: 280px; /* Reset margin for small screens */
+  }
+
+  table.table {
+    width: 50%; /* Adjust table width */
+    font-size: 14px; /* Adjust font size for extra-large screens */
+  }
+
+  /* Move the collapse button to overlap with the edge of the sidebar */
+#collapseButton {
+  position: fixed;
+  top:10%;
+  left: 245px; /* Adjust as needed */
+  transform: translateY(-40%);
+  z-index: 1100; /* Ensure it's on top of other elements */
+}
+}
