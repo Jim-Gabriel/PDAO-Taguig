@@ -1,19 +1,21 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PDAO ADMIN</title>
 
-    <link rel="icon" type="image/png" href="images/pdao_logo.png" />
+    <link rel="icon" type="image/png"
+      href="public/assets/images/pdao_logo.png" />
 
     <link rel="canonical"
       href="https://getbootstrap.com/docs/5.3/examples/sidebars/">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-    <link href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    <link
+      href="public/assets/plugins/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css"
       rel="stylesheet">
 
     <style>
@@ -96,7 +98,7 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="adminDashboard.css" rel="stylesheet">
+    <link href="public/assets/css/adminDashboard.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"
@@ -173,10 +175,14 @@
 
     <main class="container-fluid">
       <!-- Header -->
-      <header class="d-flex justify-content-between align-items-center p-3 bg-dark text-white">
+      <header
+        class="d-flex justify-content-between align-items-center p-3 bg-dark text-white">
         <div class="d-flex align-items-center">
-          <a href="adminDashboard.html" class="d-flex align-items-center text-decoration-none text-white">
-            <img src="images/pdao_logo.png" alt="PDAO Logo" width="40" height="40" class="me-2">
+          <a href="adminDashboard.html"
+            class="d-flex align-items-center text-decoration-none text-white">
+            <img src="public/assets/images/pdao_logo.png" alt="PDAO Logo"
+              width="40"
+              height="40" class="me-2">
             <span class="fs-3">PDAO ADMIN</span>
           </a>
         </div>
@@ -184,7 +190,8 @@
           <a href="#"
             class="d-flex align-items-center link-light text-decoration-none dropdown-toggle"
             data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="images/user.png" alt width="32" height="32" class="rounded-circle me-2">
+            <img src="public/assets/images/user.png" alt width="32" height="32"
+              class="rounded-circle me-2">
             <strong>Admin Account</strong>
           </a>
           <ul class="dropdown-menu text-small shadow">
@@ -196,7 +203,6 @@
           </ul>
         </div>
       </header>
-      
 
       <!-- Sidebar -->
       <div id="sidebar"
@@ -223,7 +229,8 @@
           <li>
             <a href="#" id="membersLink"
               class="nav-link link-body-emphasis py-3 border-bottom rounded-0 fs-5">
-              <svg class="bi pe-none me-2 icon" width="20" height="20" role="img"
+              <svg class="bi pe-none me-2 icon" width="20" height="20"
+                role="img"
                 aria-label="Members">
                 <use xlink:href="#person-fill-check"></use>
               </svg>
@@ -257,7 +264,8 @@
           <ul
             class="nav nav-pills nav-flush flex-column mb-auto text-center mt-4">
             <li class="nav-item">
-              <a href="#" id="dashboardLinkIcon" class="nav-link py-3 border-bottom rounded-0"
+              <a href="#" id="dashboardLinkIcon"
+                class="nav-link py-3 border-bottom rounded-0"
                 title="Dashboard" data-bs-toggle="tooltip"
                 data-bs-placement="right">
                 <svg class="bi pe-none icon" width="20" height="20" role="img"
@@ -267,7 +275,8 @@
               </a>
             </li>
             <li>
-              <a href="#" id="applicantsLinkIcon" class="nav-link py-3 border-bottom rounded-0"
+              <a href="#" id="applicantsLinkIcon"
+                class="nav-link py-3 border-bottom rounded-0"
                 title="Applicants" data-bs-toggle="tooltip"
                 data-bs-placement="right">
                 <svg class="bi pe-none icon" width="20" height="20" role="img"
@@ -277,7 +286,8 @@
               </a>
             </li>
             <li>
-              <a href="#" id="membersLinkIcon" class="nav-link py-3 border-bottom rounded-0"
+              <a href="#" id="membersLinkIcon"
+                class="nav-link py-3 border-bottom rounded-0"
                 title="Members" data-bs-toggle="tooltip"
                 data-bs-placement="right">
                 <svg class="bi pe-none icon" width="20" height="20" role="img"
@@ -287,7 +297,8 @@
               </a>
             </li>
             <li>
-              <a href="#" id="usersLinkIcon" class="nav-link py-3 border-bottom rounded-0"
+              <a href="#" id="usersLinkIcon"
+                class="nav-link py-3 border-bottom rounded-0"
                 title="Users" data-bs-toggle="tooltip"
                 data-bs-placement="right">
                 <svg class="bi pe-none icon" width="20" height="20" role="img"
@@ -314,7 +325,7 @@
                   <h5>New Applicants</h5>
                   <h4 class="fs-5">100</h4>
                   <h6>Click here to view ></h6>
-                  <img src="images/new-applicant.png" alt="icon"
+                  <img src="public/assets/images/new-applicant.png" alt="icon"
                     class="card-icon">
                 </div>
               </div>
@@ -324,7 +335,8 @@
                   <h5>Renewal</h5>
                   <h4 class="fs-5">100</h4>
                   <h6>Click here to view ></h6>
-                  <img src="images/renewal.png" alt="icon" class="card-icon">
+                  <img src="public/assets/images/renewal.png" alt="icon"
+                    class="card-icon">
                 </div>
               </div>
               <div class="col-12 col-lg-3 column-size">
@@ -333,16 +345,18 @@
                   <h5>Pending</h5>
                   <h4 class="fs-5">100</h4>
                   <h6>Click here to view ></h6>
-                  <img src="images/pending.png" alt="icon" class="card-icon">
+                  <img src="public/assets/images/pending.png" alt="icon"
+                    class="card-icon">
                 </div>
               </div>
               <div class="col-12 col-lg-3 column-size">
                 <div class="card w-100  text-white p-3 rounded-3 shadow-sm"
                   style="background-color: #ac2e28; position: relative;">
-                  <h5>Decline</h5>
+                  <h5>Declined</h5>
                   <h4 class="fs-5">100</h6>
                   <h6>Click here to view ></h6>
-                  <img src="images/declined.png" alt="icon" class="card-icon">
+                  <img src="public/assets/images/declined.png" alt="icon"
+                    class="card-icon">
                 </div>
               </div>
             </div>
@@ -563,163 +577,163 @@
       </div>
 
       <!-- LIST OF MEMBERS -->
-      
+
       <div class="members-container">
         <div id="membersSection">
-        <div class="col-12 p-4 fs-2 fw-semibold">LIST OF MEMBERS</div>
+          <div class="col-12 p-4 fs-2 fw-semibold">LIST OF MEMBERS</div>
 
-        <div class="container bg-white rounded-4 p-4 shadow-sm">
-          <div class="col-12">
-            <table id="membersTable"
-              class="table table-striped justify-items-center"
-              style="width:100%">
-              <thead>
-                <tr>
-                  <th class="fs-6 text-center bg-dark-subtle">ID Number</th>
-                  <th class="fs-6 text-center bg-dark-subtle">Control
-                    Number</th>
-                  <th class="fs-6 text-center bg-dark-subtle">Date of
-                    Application</th>
-                  <th class="fs-6 text-center bg-dark-subtle">Full Name</th>
-                  <th class="fs-6 text-center bg-dark-subtle">Contact
-                    Details</th>
-                  <th class="fs-6 text-center bg-dark-subtle">Type of
-                    Disability</th>
-                  <th class="fs-6 text-center bg-dark-subtle">Application
-                    Type</th>
-                  <th class="fs-6 text-center bg-dark-subtle">Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- Sample data rows -->
-                <tr>
-                  <td>1376070-001</td>
-                  <td>CTRL0001</td>
-                  <td>2024-01-01</td>
-                  <td>John Doe</td>
-                  <td>09123456789</td>
-                  <td>Visual Impairment</td>
-                  <td>New</td>
-                  <td><span class="badge bg-success">Approved</span></td>
-                </tr>
-                <!-- 20 Additional rows -->
-                <tr>
-                  <td>1376070-002</td>
-                  <td>CTRL0002</td>
-                  <td>2024-01-02</td>
-                  <td>Jane Smith</td>
-                  <td>09198765432</td>
-                  <td>Mobility Impairment</td>
-                  <td>Change Address</td>
-                  <td><span class="badge bg-warning">Pending</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-003</td>
-                  <td>CTRL0003</td>
-                  <td>2024-01-03</td>
-                  <td>Michael Johnson</td>
-                  <td>09156473829</td>
-                  <td>Hearing Impairment</td>
-                  <td>Renewal</td>
-                  <td><span class="badge bg-danger">Rejected</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-004</td>
-                  <td>CTRL0004</td>
-                  <td>2024-01-04</td>
-                  <td>Emily Davis</td>
-                  <td>09123456789</td>
-                  <td>Cognitive Impairment</td>
-                  <td>Lost ID</td>
-                  <td><span class="badge bg-success">Approved</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-005</td>
-                  <td>CTRL0005</td>
-                  <td>2024-01-05</td>
-                  <td>David Wilson</td>
-                  <td>09112345678</td>
-                  <td>Intellectual Disability</td>
-                  <td>New</td>
-                  <td><span class="badge bg-warning">Pending</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-006</td>
-                  <td>CTRL0006</td>
-                  <td>2024-01-06</td>
-                  <td>Sarah Lee</td>
-                  <td>09198761234</td>
-                  <td>Visual Impairment</td>
-                  <td>Change Surname</td>
-                  <td><span class="badge bg-danger">Rejected</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-007</td>
-                  <td>CTRL0007</td>
-                  <td>2024-01-07</td>
-                  <td>Robert Brown</td>
-                  <td>09155678901</td>
-                  <td>Mobility Impairment</td>
-                  <td>Renewal</td>
-                  <td><span class="badge bg-success">Approved</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-008</td>
-                  <td>CTRL0008</td>
-                  <td>2024-01-08</td>
-                  <td>Jessica White</td>
-                  <td>09178965432</td>
-                  <td>Hearing Impairment</td>
-                  <td>Change Address</td>
-                  <td><span class="badge bg-warning">Pending</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-009</td>
-                  <td>CTRL0009</td>
-                  <td>2024-01-09</td>
-                  <td>Thomas Green</td>
-                  <td>09133456789</td>
-                  <td>Cognitive Impairment</td>
-                  <td>Lost ID</td>
-                  <td><span class="badge bg-danger">Rejected</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-010</td>
-                  <td>CTRL0010</td>
-                  <td>2024-01-10</td>
-                  <td>Linda Harris</td>
-                  <td>09165748392</td>
-                  <td>Intellectual Disability</td>
-                  <td>New</td>
-                  <td><span class="badge bg-success">Approved</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-011</td>
-                  <td>CTRL0011</td>
-                  <td>2024-01-11</td>
-                  <td>Christopher Martinez</td>
-                  <td>09198364527</td>
-                  <td>Visual Impairment</td>
-                  <td>Change Surname</td>
-                  <td><span class="badge bg-warning">Pending</span></td>
-                </tr>
-                <tr>
-                  <td>1376070-012</td>
-                  <td>CTRL0012</td>
-                  <td>2024-01-12</td>
-                  <td>Patricia Clark</td>
-                  <td>09129384756</td>
-                  <td>Mobility Impairment</td>
-                  <td>Renewal</td>
-                  <td><span class="badge bg-danger">Rejected</span></td>
-                </tr>
+          <div class="container bg-white rounded-4 p-4 shadow-sm">
+            <div class="col-12">
+              <table id="membersTable"
+                class="table table-striped justify-items-center"
+                style="width:100%">
+                <thead>
+                  <tr>
+                    <th class="fs-6 text-center bg-dark-subtle">ID Number</th>
+                    <th class="fs-6 text-center bg-dark-subtle">Control
+                      Number</th>
+                    <th class="fs-6 text-center bg-dark-subtle">Date of
+                      Application</th>
+                    <th class="fs-6 text-center bg-dark-subtle">Full Name</th>
+                    <th class="fs-6 text-center bg-dark-subtle">Contact
+                      Details</th>
+                    <th class="fs-6 text-center bg-dark-subtle">Type of
+                      Disability</th>
+                    <th class="fs-6 text-center bg-dark-subtle">Application
+                      Type</th>
+                    <th class="fs-6 text-center bg-dark-subtle">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Sample data rows -->
+                  <tr>
+                    <td>1376070-001</td>
+                    <td>CTRL0001</td>
+                    <td>2024-01-01</td>
+                    <td>John Doe</td>
+                    <td>09123456789</td>
+                    <td>Visual Impairment</td>
+                    <td>New</td>
+                    <td><span class="badge bg-success">Approved</span></td>
+                  </tr>
+                  <!-- 20 Additional rows -->
+                  <tr>
+                    <td>1376070-002</td>
+                    <td>CTRL0002</td>
+                    <td>2024-01-02</td>
+                    <td>Jane Smith</td>
+                    <td>09198765432</td>
+                    <td>Mobility Impairment</td>
+                    <td>Change Address</td>
+                    <td><span class="badge bg-warning">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-003</td>
+                    <td>CTRL0003</td>
+                    <td>2024-01-03</td>
+                    <td>Michael Johnson</td>
+                    <td>09156473829</td>
+                    <td>Hearing Impairment</td>
+                    <td>Renewal</td>
+                    <td><span class="badge bg-danger">Rejected</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-004</td>
+                    <td>CTRL0004</td>
+                    <td>2024-01-04</td>
+                    <td>Emily Davis</td>
+                    <td>09123456789</td>
+                    <td>Cognitive Impairment</td>
+                    <td>Lost ID</td>
+                    <td><span class="badge bg-success">Approved</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-005</td>
+                    <td>CTRL0005</td>
+                    <td>2024-01-05</td>
+                    <td>David Wilson</td>
+                    <td>09112345678</td>
+                    <td>Intellectual Disability</td>
+                    <td>New</td>
+                    <td><span class="badge bg-warning">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-006</td>
+                    <td>CTRL0006</td>
+                    <td>2024-01-06</td>
+                    <td>Sarah Lee</td>
+                    <td>09198761234</td>
+                    <td>Visual Impairment</td>
+                    <td>Change Surname</td>
+                    <td><span class="badge bg-danger">Rejected</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-007</td>
+                    <td>CTRL0007</td>
+                    <td>2024-01-07</td>
+                    <td>Robert Brown</td>
+                    <td>09155678901</td>
+                    <td>Mobility Impairment</td>
+                    <td>Renewal</td>
+                    <td><span class="badge bg-success">Approved</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-008</td>
+                    <td>CTRL0008</td>
+                    <td>2024-01-08</td>
+                    <td>Jessica White</td>
+                    <td>09178965432</td>
+                    <td>Hearing Impairment</td>
+                    <td>Change Address</td>
+                    <td><span class="badge bg-warning">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-009</td>
+                    <td>CTRL0009</td>
+                    <td>2024-01-09</td>
+                    <td>Thomas Green</td>
+                    <td>09133456789</td>
+                    <td>Cognitive Impairment</td>
+                    <td>Lost ID</td>
+                    <td><span class="badge bg-danger">Rejected</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-010</td>
+                    <td>CTRL0010</td>
+                    <td>2024-01-10</td>
+                    <td>Linda Harris</td>
+                    <td>09165748392</td>
+                    <td>Intellectual Disability</td>
+                    <td>New</td>
+                    <td><span class="badge bg-success">Approved</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-011</td>
+                    <td>CTRL0011</td>
+                    <td>2024-01-11</td>
+                    <td>Christopher Martinez</td>
+                    <td>09198364527</td>
+                    <td>Visual Impairment</td>
+                    <td>Change Surname</td>
+                    <td><span class="badge bg-warning">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>1376070-012</td>
+                    <td>CTRL0012</td>
+                    <td>2024-01-12</td>
+                    <td>Patricia Clark</td>
+                    <td>09129384756</td>
+                    <td>Mobility Impairment</td>
+                    <td>Renewal</td>
+                    <td><span class="badge bg-danger">Rejected</span></td>
+                  </tr>
 
-              </tbody>
-            </table>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
       <!-- APPLICANT DETAILS FORM -->
       <div id="applicantDetailsSection" class="p-4 bg-light rounded shadow-lg"
@@ -892,12 +906,12 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script>
     <script
-      src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="adminDashboard.js"></script>
-    <script src="genderPieChart.js"></script>
-    <script src="membersLineChart.js"></script>
-    <script src="newAppLineChart.js"></script>
-    <script src="renewalLineChart.js"></script>
+      src="public/assets/javascript/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="public/assets/javascript/adminDashboard.js"></script>
+    <script src="public/assets/javascript/genderPieChart.js"></script>
+    <script src="public/assets/javascript/membersLineChart.js"></script>
+    <script src="public/assets/javascript/newAppLineChart.js"></script>
+    <script src="public/assets/javascript/renewalLineChart.js"></script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -931,8 +945,11 @@
     <script
       src="https://cdn.datatables.net/buttons/3.0.2/js/buttons.colVis.min.js"></script>
 
-    <script src="applicantsTable.js"></script>
-    <script src="membersTable.js"></script>
+    <!-- <script
+      src="public/assets/plugins/bootstrap-5.3.3-examples/bootstrap-5.3.3-examples/assets/js/color-modes.js"></script> -->
+
+    <script src="public/assets/javascript/applicantsTable.js"></script>
+    <script src="public/assets/javascript/membersTable.js"></script>
 
   </body>
 </html>

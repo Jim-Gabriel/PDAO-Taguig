@@ -37,7 +37,7 @@
 body, html {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
-  background-image: url('../../images/bg/login_bg.svg');
+  background-image: url('../../../../public/assets/images/bg/login_bg.svg');
   background-size: cover; 
   background-position: 100%;
   background-repeat: no-repeat;
@@ -176,10 +176,9 @@ iframe {
 
 .wrap-login100 {
   width: 960px;
-  background: rgb(255, 255, 255); /* White background with 90% opacity */
+  background: rgb(250, 250, 250); /* White background with 90% opacity */
   border-radius: 10px;
   overflow: hidden;
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
